@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Datasets
+cifar10/
+
+# logs
+lightning_logs/
