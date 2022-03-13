@@ -43,15 +43,15 @@ if __name__ == '__main__':
     checkpoint_callback = plc.ModelCheckpoint(
         verbose=True,
         save_top_k=5,
-        monitor='val_loss',
-        mode='min'
+        monitor='val_acc',
+        mode='max'
     )
 
     early_stopping = plc.EarlyStopping(
         verbose=True,
         patience=10,
-        monitor='val_loss',
-        mode='min'
+        monitor='val_acc',
+        mode='max'
     )
 
     trainer_args = {
