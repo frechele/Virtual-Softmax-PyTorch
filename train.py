@@ -4,7 +4,7 @@ import pytorch_lightning as pl
 import pytorch_lightning.callbacks as plc
 
 from virtsm.engine.cifar10 import CIFAR10Module
-from virtsm.models.convnet import SimpleConvNet
+from virtsm.models.convnet import SimpleConvNet, SimpleConvNetVirt
 from virtsm.models.metrics import METRICS
 
 
@@ -13,7 +13,8 @@ ENGINES = {
 }
 
 MODELS = {
-    'simple': SimpleConvNet
+    'simple': SimpleConvNet,
+    'simple_virt': SimpleConvNetVirt
 }
 
 

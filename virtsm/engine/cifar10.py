@@ -51,7 +51,7 @@ class CIFAR10Module(pl.LightningModule):
     def training_step(self, batch, batch_idx):
         inp, target = batch
 
-        pred = self.model(inp)
+        pred = self.model(inp, target)
 
         loss = self.criteria(pred, target)
 
